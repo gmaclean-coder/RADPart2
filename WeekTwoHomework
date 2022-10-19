@@ -6,7 +6,7 @@ public with sharing class WeekTwoHomework {
     public static void accountsWithIndustry () {
         List <contact> conList = [SELECT ID, Account.Name, Account.Industry FROM Contact ];
         for(contact ct : conList ){
-            system.debug ('List of contacts: '+ ct.account.name);
+            system.debug ('Account Name: '+ ct.account.name + 'Industry: ' + ct.account.Industry);
 
         }
     }
